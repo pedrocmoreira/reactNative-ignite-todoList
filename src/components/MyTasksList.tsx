@@ -31,6 +31,7 @@ export function MyTasksList({ tasks, onLongPress, onPress }: MyTasksListProps) {
             activeOpacity={0.7}
             //TODO - use onPress, onLongPress and style props
             onPress={() => onPress(item.id)}
+            onLongPress={() => onLongPress(item.id) }
             style={[ item.done? styles.taskButtonDone : styles.taskButton ]}
           >
             <View 
