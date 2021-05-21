@@ -23,6 +23,7 @@ export function TodoInput({ addTask }: TodoInputProps) {
         placeholder="Adicionar novo todo..."
         returnKeyType="send"
         //TODO - use value, onChangeText and onSubmitEditing props
+        value={task}
         onChangeText={setTask}
         onSubmitEditing={handleAddNewTask}
 
